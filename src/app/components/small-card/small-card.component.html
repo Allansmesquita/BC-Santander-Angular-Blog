@@ -1,15 +1,16 @@
 <div class="container__small-card">
+
     <div class="container__small-card-content">
         <div class="small-card__photo">
             <img 
-                src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                src="{{ photoCover }}" 
                 alt=""
                 srcset=""
             >
         </div>
     
         <div class="small-card__title">
-            <h1><a href="#">Saiu a nova versão do Angular</a></h1>
+            <h1><a [routerLink]="['content',Id]">{{cardTitle}}</a></h1>
         </div>
     
     </div>
